@@ -1,5 +1,5 @@
-string_1 = "79-900"
-string_2 = "80-155"
+string_1 = input("Please enter the beginning of your list of postal codes: ")
+string_2 = input("Please enter the end of a list of postal codes: ")
 
 def generator(arg1, arg2):
 
@@ -18,6 +18,7 @@ def generator(arg1, arg2):
         i = str(i)
         new = i[0:2] + "-" + i[2:5]
         code_generator.append(new)
-    print(code_generator)
+        print(code_generator)
 
 generator(string_1, string_2)
+    
